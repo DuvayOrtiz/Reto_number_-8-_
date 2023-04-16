@@ -21,7 +21,18 @@ for i in range(101): # Establecemos el rango
 ## *Punto 2* 
 - Imprimir un listado con los números impares desde 1 hasta 999 y seguidamente otro listado con los números pares desde 2 hasta 1000.
 ```ruby
-
+#punto 2
+x=[]
+y=[] # Se crean los conjuntos que se van a llenar con lo pedido
+for i in range(1001): # Se establecen los rangos y se da la orden
+    if i%2==0:
+        x.append(i)
+for i in range(1001): 
+    if i%2!=0:
+        y.append(i) # Dependiendo del residuo se agrega a su conjunto
+print(x)
+print(y) # Se imprimen los conjuntos con los números
+print("listo")
 ```
 
 ## *Punto 3*
