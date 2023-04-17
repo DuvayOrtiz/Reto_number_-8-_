@@ -43,9 +43,9 @@ print("listo")
 #punto 3
 def pares(x): # Definimos unas función  para ir hasta x
     c = [] # Hacemos un conjunto
-    for i in range(x+1): # Establecemos el rango y unimos al conjunto
+    for i in range(1,x+1): # Establecemos el rango y unimos al conjunto
         if i%2==0:
-            c.append(i)
+            c.insert(0,i)
     return c
 x=int(input("ingresar numero mayor igual que 2: "))  # Pedimos x para ir hasta ahí
 print(pares(x)) # Imprimimos 
